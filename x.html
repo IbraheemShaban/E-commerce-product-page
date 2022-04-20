@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body id="body-id">
+  <div class="main">
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <div class="top-left-bar-items">
+          <img src="/images/logo.svg" alt="logo" class="logo">
+          <button class="top-left-bar-buttons">
+            <p class="top-left-bar-buttons-text">Collection</p>
+          </button>
+          <button class="top-left-bar-buttons">
+            <p class="top-left-bar-buttons-text">Men</p>
+          </button>
+          <button class="top-left-bar-buttons">
+            <p class="top-left-bar-buttons-text">Women</p>
+          </button>
+          <button class="top-left-bar-buttons">
+            <p class="top-left-bar-buttons-text">About</p>
+          </button>
+          <button class="top-left-bar-buttons">
+            <p class="top-left-bar-buttons-text">Contact</p>
+          </button>
+        </div>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-right-bar-items">
+          <input type="image" src="/images/icon-cart.svg" name="cart" class="cart" id="cart" />
+          <input type="image" src="/images/image-avatar.png" name="avatar" class="avatar" id="avatar" />
+        </div>
+      </div>
+    </div>
+    <div class="line">
+      <br>
+      <hr class="hr" />
+    </div>
+    <div class="mid-screen">
+      <div class="mid-screen-left">
+        <img style="width:80%;border-radius: 15px;" src="/images/image-product-1.jpg" alt="shoes">
+      </div>
+      <div class="mid-screen-right">
+        <div class="company">
+          <h5>SNEAKER COMPANY</h5>
+        </div>
+        <div class="sneakers-name">
+          <h1> Fall Limited Edition Sneakers </h1>
+        </div>
+        <div class="description">
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole,
+            they’ll withstand everything the weather can offer.</p>
+        </div>
+        <div class="one-twenty-five-fifty">
+          <h2>$125.00</h2>
+          <div class="fifty">
+            <p>50%</p>
+          </div>
+        </div>
+        <div class="two-fifty">
+          <p><del>$250.00</del></p>
+        </div>
+        <div class="count-add">
+          <div class="count">
+            <input type="image" src="/images/icon-minus.svg" name="minus" class="minus" id="minus" />
+            <p id="orderCount"></p>
+            <input type="image" src="/images/icon-plus.svg" name="plus" class="plus" id="plus" />
+          </div>
+          <div class="add-cart"><button class="add-button" id="add-button"><img class="add-cart-img"
+                src="/images/icon-cart.svg" alt="add"> Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cart-open-screen" id="cart-open-screen">
+    <p><b>Cart</b></p>
+    <hr class="hr" />
+    <div class="cart-is-empty" id="cart-is-empty">
+      <p><b>Your cart is empty</b></p>
+    </div>
+    <div class="cart-has-items" id="cart-has-items">
+      <div class="items-bought-description">
+        <img style="width:20%;border-radius: 5px;" src="/images/image-product-1.jpg" alt="shoes">
+        <p class="items-bought-description-summary" id="items-bought-description-summary" class="description"></p>
+        <input type="image" src="/images/icon-delete.svg" name="delete" class="delete" id="delete" />
+      </div>
+    </div>
+  </div>
+  <div class="number-on-cart-icon" id="number-on-cart-icon">
+    <p id="number-on-cart" class="number-on-cart"></p>
+  </div>
+  <!-- <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+      Mentor</a>. Coded by <a href="#">Your Name Here</a>. </div> -->
+</body>
+<script src="./index.js"></script>
+
+</html>
