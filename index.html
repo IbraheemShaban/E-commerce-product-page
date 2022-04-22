@@ -11,20 +11,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | E-commerce product page</title>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
   </style>
 </head>
 
 <body id="body-id">
+  <div id="lightbox" class="lightbox">
+    <img id="gallery-big-image" class="gallery-big-image" src="/images/image-product-1.jpg">
+    <div class="lightbox-small-images">
+      <input id="lightbox-thumbnail1" class="thumbnail" type="image" src="/images/image-product-1-thumbnail.jpg"
+        name="lightbox-thumbnail1" />
+      <input id="lightbox-thumbnail2" class="thumbnail" type="image" src="/images/image-product-2-thumbnail.jpg"
+        name="lightbox-thumbnail2" />
+      <input id="lightbox-thumbnail3" class="thumbnail" type="image" src="/images/image-product-3-thumbnail.jpg"
+        name="lightbox-thumbnail3" />
+      <input id="lightbox-thumbnail4" class="thumbnail" type="image" src="/images/image-product-4-thumbnail.jpg"
+        name="lightbox-thumbnail4" />
+    </div>
+    <div class="next-previous-circle">
+      <input id="next" class="next" type="image" src="/images/icon-next.svg" name="next" />
+    </div>
+    <div class="next-previous-circle">
+      <input id="previous" class="previous" type="image" src="images/icon-previous.svg" name="previous" />
+    </div>
+    <input id="close" class="close" type="image" src="images/icon-close.svg" name="previous" />
+  </div>
+  <!--  -->
+  <div id="lightbox2" class="lightbox2">
+    <img id="gallery-big-image2" class="gallery-big-image" src="/images/image-product-1.jpg">
+    <div class="lightbox-small-images">
+      <input id="lightbox-thumbnail1" class="thumbnail" type="image" src="/images/image-product-1-thumbnail.jpg"
+        name="lightbox-thumbnail1" />
+      <input id="lightbox-thumbnail2" class="thumbnail" type="image" src="/images/image-product-2-thumbnail.jpg"
+        name="lightbox-thumbnail2" />
+      <input id="lightbox-thumbnail3" class="thumbnail" type="image" src="/images/image-product-3-thumbnail.jpg"
+        name="lightbox-thumbnail3" />
+      <input id="lightbox-thumbnail4" class="thumbnail" type="image" src="/images/image-product-4-thumbnail.jpg"
+        name="lightbox-thumbnail4" />
+    </div>
+    <div class="next-previous-circle">
+      <input id="next" class="next" type="image" src="/images/icon-next.svg" name="next" />
+    </div>
+    <div class="next-previous-circle">
+      <input id="previous" class="previous" type="image" src="images/icon-previous.svg" name="previous" />
+    </div>
+    <input id="close" class="close" type="image" src="images/icon-close.svg" name="previous" />
+  </div>
   <div class="main">
     <div class="top-bar">
       <div class="top-bar-left">
@@ -51,6 +82,9 @@
         <div class="top-right-bar-items">
           <input type="image" src="/images/icon-cart.svg" name="cart" class="cart" id="cart" />
           <input type="image" src="/images/image-avatar.png" name="avatar" class="avatar" id="avatar" />
+          <div class="number-on-cart-icon" id="number-on-cart-icon">
+            <p id="number-on-cart" class="number-on-cart"></p>
+          </div>
         </div>
       </div>
     </div>
@@ -60,7 +94,17 @@
     </div>
     <div class="mid-screen">
       <div class="mid-screen-left">
-        <img style="width:80%;border-radius: 15px;" src="/images/image-product-1.jpg" alt="shoes">
+        <img id="big-image" class="mid-screen-left-big-image" src="/images/image-product-1.jpg" alt="shoes">
+        <div class="mid-screen-left-small-images">
+          <input id="thumbnail1" class="thumbnail" type="image" src="/images/image-product-1-thumbnail.jpg"
+            name="thumbnail1" />
+          <input id="thumbnail2" class="thumbnail" type="image" src="/images/image-product-2-thumbnail.jpg"
+            name="thumbnail2" />
+          <input id="thumbnail3" class="thumbnail" type="image" src="/images/image-product-3-thumbnail.jpg"
+            name="thumbnail3" />
+          <input id="thumbnail4" class="thumbnail" type="image" src="/images/image-product-4-thumbnail.jpg"
+            name="thumbnail4" />
+        </div>
       </div>
       <div class="mid-screen-right">
         <div class="company">
@@ -107,13 +151,9 @@
         <p class="items-bought-description-summary" id="items-bought-description-summary" class="description"></p>
         <input type="image" src="/images/icon-delete.svg" name="delete" class="delete" id="delete" />
       </div>
+      <button class="checkout-button">Checkout</button>
     </div>
   </div>
-  <div class="number-on-cart-icon" id="number-on-cart-icon">
-    <p id="number-on-cart" class="number-on-cart"></p>
-  </div>
-  <!-- <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
-      Mentor</a>. Coded by <a href="#">Your Name Here</a>. </div> -->
 </body>
 <script src="./index.js"></script>
 
